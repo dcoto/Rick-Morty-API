@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: #081b29;
+    --light-blue :#64ffda;
+    --white:#e6f1ff;
+    --green: #97ce4c;
+    --blue : #B7E4F9FF;
+}
+
+body{
+    background-color: #081b29;
+}
+
+main{
+    margin: 0 16rem;
+}
+
+.search-bar{
+    background-color: #B7E4F9FF;
+    border-radius: 8rem;
+    width: 300px;
+    padding: 8px 18px;
+    font-size: 26px;
+    color: #081b29;
+    border: 3px solid  #e6f1ff;
+    margin: 1rem;  
+    text-transform: capitalize;
+}
+
+::placeholder {
+    color: #081b29;
+  }
+
+#characters{
+    color: #e6f1ff;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.character-card{
+    width: 250px;
+    height: 350px;
+    border: 4px solid #B7E4F9FF;
+    color: #e6f1ff;
+    margin: 2rem;
+    transition: .6s;
+    border-radius: 40px;
+}
+
+.character-card img{
+    width: 100%;
+    border-radius: 34px 34px 0 0;
+}
+
+.character-card:hover{
+    transform: scale(1.2);
+}
+
+.character-card h1{
+    font-size: 18px;
+    line-height: 32px;
+    color: #B7E4F9FF;
+}
+
+.character-card p{
+    text-transform: capitalize;
+}
+
+header{
+    margin: 2rem 0;
+    text-align: center;
+}
+
+header h1{
+    color: #B7E4F9FF;
+    text-shadow: 0 0 15px #97ce4c;
+    padding: 1rem;
+    animation: title 1s infinite;
+    font-family: 'Delicious Handrawn';
+}
+
+
+
+.banner img{
+    width: 100%;
+}
+
+@keyframes title{
+
+    50%{
+        text-shadow: 0 0 15px #B7E4F9FF;
+        color: #97ce4c;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .search-bar{
+        display: flex;
+        font-size: 20px;
+        width: 300px; 
+        margin: 2rem;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main{
+        margin: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 1700px) {
+    main{
+        margin: 0;
+    }
+
+}
+
+
