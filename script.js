@@ -42,7 +42,7 @@ async function displayCharacters (name, status) {
             <h1> ${character.name} </h1>
             <p> ID: ${character.id} </p>
             <p> Status: ${character.status} </p>
-            <p> Specie: ${character.specie} </p>
+            <p> Specie: ${character.species} </p>
         `;
 
         allCharacters.appendChild(card);
